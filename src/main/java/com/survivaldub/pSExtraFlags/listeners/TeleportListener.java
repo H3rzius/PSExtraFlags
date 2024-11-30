@@ -27,9 +27,6 @@ public class TeleportListener implements Listener {
     public void onTeleport(PlayerTeleportEvent event) {
         Player player = event.getPlayer();
         Location to = event.getTo();
-        if (player.hasPermission("protectionstones.admin")) {
-            return;
-        }
         if (to == null) {
             return;
         }

@@ -31,9 +31,6 @@ public class AnimalProtectionListener implements Listener {
             return;
         }
         Player player = (Player)entity;
-        if (player.hasPermission("protectionstones.admin")) {
-            return;
-        }
         Entity target = event.getEntity();
         if (!(target instanceof Mob)) {
             return;
